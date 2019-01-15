@@ -1,3 +1,6 @@
 <% @articles.each do |article| %>
-  <div><%= article.title %></div>
+<%# <% byebug %>
+<div> <%= link_to article.title, edit_article_path(article) %> </div>
 <% end %>
+<hr>
+<a href="/articles/new">Create a new Article!</a>
