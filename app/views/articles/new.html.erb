@@ -1,3 +1,4 @@
+<h1>Article Form</h1>
 <%= form_tag articles_path do %>
   <label>Article title:</label><br>
   <%= text_field_tag :title %><br>
@@ -7,3 +8,6 @@
 
   <%= submit_tag "Submit Article" %>
 <% end %>
+<br>
+<hr>
+<a href="/articles">Go back</a>
